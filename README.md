@@ -86,3 +86,8 @@ crontab -e
 ```
 
 O comando acima executa o script diariamente às 02:00 da manhã e salva os logs em `/home/logs/backup.log`.
+
+## Visualize o CRON criado
+```bash
+crontab -l
+```
