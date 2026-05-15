@@ -65,12 +65,24 @@ find $BACKUP_DIR -type f -name "*.gz" -mtime +7 -delete
 
 ```
 
-# Como configurar o CRON
-### Crie o arquivo logs
+# Configurando o CRON
+
+## Crie o diretório de logs
+
 ```bash
 mkdir -p /home/logs
 ```
-### Defina o path do script de backup e de saída dos logs
+
+## Abra o editor do CRON
+
+```bash
+crontab -e
+```
+
+## Adicione a execução automática do backup
+
 ```bash
 0 2 * * * /home/backups/backup_postgres.sh >> /home/logs/backup.log 2>&1
 ```
+
+O comando acima executa o script diariamente às 02:00 da manhã e salva os logs em `/home/logs/backup.log`.
