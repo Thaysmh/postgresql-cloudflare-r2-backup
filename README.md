@@ -62,3 +62,15 @@ else
 fi
 
 find $BACKUP_DIR -type f -name "*.gz" -mtime +7 -delete
+
+```
+
+# Como configurar o CRON
+### Crie o arquivo logs
+```bash
+mkdir -p /home/logs
+```
+### Defina o path do script de backup e de saída dos logs
+```bash
+0 2 * * * /home/backups/backup_postgres.sh >> /home/logs/backup.log 2>&1
+```
