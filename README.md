@@ -30,9 +30,9 @@ Automatizar:
 
 ---
 # Configure o rclone
-## Instale o rclone
 O rclone é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem. No exemplo abaixo, após configura-lo, utilizaremos o rclone para enviar os arquivos de backup para o Cloudflare R2.
 
+## Instale o rclone
 ```bash
 sudo apt install rclone
 ```
