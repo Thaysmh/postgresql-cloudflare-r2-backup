@@ -29,6 +29,17 @@ Automatizar:
 - Cron
 
 ---
+# Configure o rclone
+## Instale o rclone
+```bash
+sudo apt install rclone
+```
+
+## Configure o rclone
+```bash
+rclone config
+```
+
 # Crie sua pasta de backups
 ```bash
 mkdir backups/postgres
