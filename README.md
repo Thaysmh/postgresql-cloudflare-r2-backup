@@ -32,7 +32,7 @@ Automatizar:
 # Fluxo da Automação
 
 ```mermaid
-%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 60}} }%%
+%%{init: {'flowchart': {'nodeSpacing': 40, 'rankSpacing': 40}} }%%
 
 flowchart TD
 
