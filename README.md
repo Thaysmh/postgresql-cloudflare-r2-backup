@@ -29,6 +29,25 @@ Automatizar:
 - Cron
 
 ---
+# Fluxo da Automação
+
+```mermaid
+flowchart TD
+
+    A[PostgreSQL Database] --> B[pg_dump]
+    B --> C[gzip Compression]
+    C --> D[Arquivo .sql.gz]
+    D --> E[rclone]
+    E --> F[Cloudflare R2 Bucket]
+
+    D --> G[Backup Local]
+    G --> H[Rotação Automática<br/>find -mtime +7 -delete]
+
+    I[Cron Job 02:00 AM] --> J[backup_postgres.sh]
+    J --> B
+```
+
+---
 # Configure o rclone
 O rclone é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem. No exemplo abaixo, após configura-lo, utilizaremos o rclone para enviar os arquivos de backup para o Cloudflare R2.
 
