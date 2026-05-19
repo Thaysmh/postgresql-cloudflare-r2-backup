@@ -50,6 +50,14 @@ flowchart TD
 ```
 
 ---
+# Crie um bucket para armazenar os backups no Cloudflare R2
+
+1. Acesse o painel da Cloudflare
+2. Clique em Storage & Databases
+3. Clique em R2 Object Storage e depois em overview
+4. Ao lado direito clique em "Create bucket"
+
+---
 # Configure o rclone
 O rclone é um programa de linha de comando para gerenciar arquivos em armazenamento na nuvem. No exemplo abaixo, após configura-lo, utilizaremos o rclone para enviar os arquivos de backup para o Cloudflare R2.
 
