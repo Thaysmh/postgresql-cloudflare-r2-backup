@@ -29,7 +29,10 @@ Automatizar:
 - Cron
 
 ---
-
+# Crie sua pasta de backups
+```bash
+mkdir backups/postgres
+```
 # Estrutura do Script de Backup
 
 ```bash
