@@ -79,6 +79,8 @@ rclone config
 mkdir backups/postgres
 ```
 # Estrutura do Script de Backup
+Crie o arquivo de backup com nome backup_postgres.sh` no diretório `/home/backups/`.
+
 ## Tratamento de falhas
 
 O script utiliza:
