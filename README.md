@@ -82,8 +82,6 @@ mkdir backups/postgres
 ## Crie o script de backup
 Crie o script de backup com nome backup_postgres.sh` no diretório `/home/backups/`.
 
---- 
-
 ## Tratamento de falhas
 
 O script utiliza:
