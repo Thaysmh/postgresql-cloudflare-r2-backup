@@ -45,6 +45,11 @@ rclone config
 mkdir backups/postgres
 ```
 # Estrutura do Script de Backup
+## Tratamento de falhas
+
+O script utiliza:
+- `set -e` → interrompe o script caso algum comando falhe;
+- `set -o pipefail` → detecta falhas em comandos encadeados com pipes.
 
 ```bash
 #!/bin/bash
