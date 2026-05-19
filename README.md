@@ -144,3 +144,18 @@ O comando acima executa o script diariamente às 02:00 da manhã e salva os logs
 ```bash
 crontab -l
 ```
+
+## Visualize o log
+
+O log é responsável por exibir o status do backup. No caso de sucesso:
+
+```bash
+cat /home/logs/backup.log
+```
+
+Saída esperada:
+
+```bash
+Backup realizado com sucesso
+Upload realizado com sucesso
+```
