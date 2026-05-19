@@ -32,6 +32,8 @@ Automatizar:
 # Fluxo da Automação
 
 ```mermaid
+%%{init: {'flowchart': {'nodeSpacing': 50, 'rankSpacing': 60}} }%%
+
 flowchart TD
 
     A[PostgreSQL Database] --> B[pg_dump]
