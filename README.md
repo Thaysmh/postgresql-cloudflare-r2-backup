@@ -110,7 +110,7 @@ if [ $? -eq 0 ]; then
 
         /usr/bin/rclone copy \
         "$BACKUP_DIR/backup_${DB_NAME}_${DATA}.sql.gz" \
-        cloudflare:postgres-backups-staging
+        cloudflare:BUCKET_NAME
 
         echo "Upload realizado com sucesso"
 else 
