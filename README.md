@@ -52,6 +52,8 @@ flowchart TD
 ---
 # Crie um bucket para armazenar os backups no Cloudflare R2
 
+![Cloudflare R2 Overview](./assets/cloudflarer2.png)
+
 1. Acesse o painel da Cloudflare
 2. Clique em Storage & Databases
 3. Clique em R2 Object Storage e depois em overview
